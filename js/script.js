@@ -27,7 +27,7 @@ function bombe(min,max){
 let bottone = document.getElementById('spawn')
 let contentboxes = document.getElementById('content-box')
 bottone.addEventListener('click', function(){
-contentboxes.innerHTML= " "
+contentboxes.innerHTML= " ";
 
 // INIZIO ARRAY BOMBE
 let arrayBombe;
@@ -40,9 +40,17 @@ console.log(arrayBombe)
         const createboxes= squares();
         createboxes.innerText += numeri
         contentboxes.appendChild(createboxes);
+
         createboxes.addEventListener('click', function(){
         console.log(this.innerText)
         this.classList.toggle('pulsante')
+        
+        //AGGIUNGO LE BOMBE 
+
+        if(arrayBombe.includes(parseInt(this.innerText))){
+            alert('hai cliccato una bomba' + this.innerText)
+        }
+
         })
     }
 })
