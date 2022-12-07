@@ -6,7 +6,7 @@ function squares(){
 
 }
 
-// PRIMA MODIFICA PER ESERCIZIO BOMBE
+// INIZIO NUMERO RANDOM CON BLACKLIST
 
 function bombe(min,max){
     let bombs = [];
@@ -19,11 +19,9 @@ function bombe(min,max){
             i++
         }
     }
-
     return bombs;
-
 }
-
+// FINE NUMERO RANDOM CON BLACKLIST
 
 
 let bottone = document.getElementById('spawn')
@@ -31,12 +29,11 @@ let contentboxes = document.getElementById('content-box')
 bottone.addEventListener('click', function(){
 contentboxes.innerHTML= " "
 
-// AGGIUNTO ARRAY BOMBE
+// INIZIO ARRAY BOMBE
 let arrayBombe;
 arrayBombe= bombe(1,100);
 console.log(arrayBombe)
-
-// AGGIUNTO ARRAY BOMBE
+// FINE ARRAY BOMBE
 
     for(let i = 1; i<=100 ; i++){
         const numeri = i
