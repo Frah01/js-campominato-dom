@@ -18,6 +18,18 @@ main {
     height: calc(100vh - 160px);
 }
 
+.justify-end{
+    display: flex;
+    justify-content: flex-end;
+}
+.justify-start{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.col {
+    width: calc(100% / 3);
+}
 
 .container-header {
     width: 100%;

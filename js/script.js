@@ -43,7 +43,6 @@ console.log(arrayBombe)
         createboxes.addEventListener('click', function(){
         console.log(this.innerText)
         counter++
-        console.log(counter)
         this.classList.toggle('pulsante')
         
         //AGGIUNGO LE BOMBE NELLA GRIGLIA
