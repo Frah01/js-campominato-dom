@@ -54,6 +54,7 @@ console.log(arrayBombe)
             this.classList.add('red');
             contentboxes.classList.add('events-blocker')
             alert('Hai cliccato su una bomba' + " : " + this.innerText)
+            document.getElementById('result').innerHTML= "Hai cliccato su" + " " + counter + " " + "caselle giuste"
         }
 
         })
