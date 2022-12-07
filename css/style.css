@@ -119,3 +119,11 @@ footer{
     align-items: center;
     margin-left: 2rem;
 }
+
+.red{
+    background-color: red;
+}
+
+.events-blocker{
+    pointer-events: none;
+}
